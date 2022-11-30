@@ -90,7 +90,7 @@
   .form__PostCode{
     width: 100%;
   }
-  .form__PostCode span{
+  .form__PostCode span:first-child {
     font-size: 12px;
   }
 
