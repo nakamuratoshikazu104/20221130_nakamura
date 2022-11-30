@@ -30,10 +30,22 @@ class ClientRequest extends FormRequest
         return [
             'name' => 'required',
             'gender' => 'required',
-            'email' => 'required|email',
+            'email' => 'required',
             'post_code' => 'required',
             'address' => 'required',
             'content' => 'required'
         ];
     }
+
+public function messages()
+{
+    return [
+        'name.required' => '名前を入力してください',
+        'gender.required' => '性別を入力してください',
+        'email.required' => 'メールアドレスを入力してください',
+        'post_code.required' => '郵便番号を入力してください',
+        'address.required' => '住所を入力してください',
+        'content.required' => 'ご意見を入力してください',
+    ];
+}
 }

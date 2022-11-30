@@ -14,6 +14,6 @@ class AdvanceTestController extends Controller
 
     public function post(ClientRequest $request)
     {
-        return view('index', ['txt' => '正しいです']);
+        return view('index', ['txt' => 'お問い合わせ']);
     }
 }
